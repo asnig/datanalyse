@@ -43,6 +43,52 @@
         }
         return true;
     }
+
+    option = {
+        title: {
+            text: '分析结果'
+        },
+        xAxis: {
+            name:'坐标X',
+            boundaryGap: false,
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: '#000',
+                    type: 'solid'
+                }
+            },
+            minInterval: 1,
+            type:'value'
+        },
+        yAxis: {
+            name:'坐标A',
+            max:'350',
+            type:'value',
+            axisLine:{
+                show:false
+            }
+        },
+        series: [{
+            symbolSize: 10,
+            data: [
+                [1, 0],
+                [1, 50],
+                [1, 60],
+                [1, 90],
+                [1, 120],
+                [1, 160],
+                [1, 200],
+                [1, 220],
+                [1, 230],
+                [1, 300],
+                [1, 350],
+                [2,0],
+                [2,3]
+            ],
+            type: 'scatter'
+        }]
+    };
 </script>
 
 
